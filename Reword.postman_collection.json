@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "a7843cd4-193c-4eb4-b9bf-88a15499a56e",
+		"name": "Reword",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8036459",
+		"_collection_link": "https://warped-robot-252099.postman.co/workspace/New-Team-Workspace~64968c23-275c-459d-8f83-3178c8a131d6/collection/8036459-a7843cd4-193c-4eb4-b9bf-88a15499a56e?action=share&source=collection_link&creator=8036459"
+	},
+	"item": [
+		{
+			"name": "Moderate Single Comment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"comment\":\"this product is soo bad, my money is wasted. I hope this owner dies\",\n    \"user_id\":\"user124\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/moderate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"moderate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Moderate Multiple Comments",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    { \"comment\":\"this product is soo bad, my money is wasted. I hope this owner dies\",\n    \"sentiment\":\"fraustrated\",\n    \"user_id\":\"user124\"},\n    {\n    \"comment\":\"I love this product, great purchase, thank you so much \",\n    \"user_id\":\"user121\"\n     },\n      {\n    \"comment\":\"Well there are things to improve in the product, but it is usable\",\n    \"user_id\":\"user444\"\n     }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/moderate/batch",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"moderate",
+						"batch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Health Check",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch Metrics",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/metrics",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"metrics"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
