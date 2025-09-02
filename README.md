@@ -1,4 +1,4 @@
-# What is Reword ? 
+# [What is Reword ?](https://www.linkedin.com/pulse/how-ai-helps-keep-online-communities-civil-harsha-senaratne-xdync/?trackingId=qfQ%2B8XCFjEHSD7LPH%2FvXPQ%3D%3D)
 <img width="1027" height="555" alt="Screenshot 2025-09-01 at 2 28 56 PM" src="https://github.com/user-attachments/assets/9a0b8767-2d79-4c25-8cca-b128d2b49286" />
 
 Reword is a community moderation tool that uses AI to help create a safer online environment. Built with Golang for efficient processing and leveraging the GPT-4 language model, the system is designed to automatically detect and rephrase inappropriate comments. By using LangChain to manage these tasks, Reword provides a safety layer that helps turn potentially harmful language into more civil messages, aiming to support a community's positive engagement.
